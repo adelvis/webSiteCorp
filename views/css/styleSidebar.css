@@ -1,0 +1,146 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+
+body {
+  background-color: #eee;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100%;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#navbarId.active {
+    margin-left: 250px;
+}
+
+#mainId.active {
+    margin-left: 250px;
+}
+
+#footerId.active {
+    margin-left: 250px;
+}
+
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+
+#sidebar .logo-sn {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#sidebar .logo-sn img {
+  height: 38px;
+}
+
+#sidebar .search-form input[type=text] {
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+i.menu{
+margin: 5px;
+}
+
+#sidebar ul li a {
+    padding: 15px;
+    font-size: 1em;
+    display: block;
+    color: #fff;
+}
+
+#sidebar ul li form {
+    color: #fff;
+    padding: 10px;
+}    
+
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6699CC;
+}    
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
